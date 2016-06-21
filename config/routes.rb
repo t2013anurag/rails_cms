@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   root to: 'demo#index'
   # get 'demo/index'
   #or
-  match 'demo/index' => 'demo#index', via: :get
+  # match 'demo/index' => 'demo#index', via: :get
+
+  match ':controller(/:action(/:id))', via: :get
+  # if request is : localhost:3000/demo/index
+  # so it sees and matches and =>   :controller == demo , :action == index
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
