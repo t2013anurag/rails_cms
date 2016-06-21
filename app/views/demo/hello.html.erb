@@ -1,6 +1,10 @@
 <h1>Demo#Hello</h1>
 <p>Hello World!</p>
 
+
+<%= link_to('Go to index', {controller: 'demo', action: 'index'}) %>
+
+<br/>
 <%= 1+1  %>
 
 <br/>
@@ -17,4 +21,14 @@
 <% @arr.each do |n| %>
 <%= n %>
 <% end %>
+<br/ >
 
+ID : <%= @id  %> <br />
+ID : <%= params[:id]  %> <br />
+Page : <%= @page  %> <br />
+
+Next Page <%= @page + 1 %>
+
+<hr/>
+
+<%= params.inspect %>
