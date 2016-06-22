@@ -3,6 +3,8 @@
 
 Run 
      rake db:migrate
+     rake db:migrate VERION = 0 # to revert
+     rake db:migrate:status  # returns status
 
 
 This README would normally document whatever steps are necessary to get the
