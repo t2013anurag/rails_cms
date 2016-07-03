@@ -6,3 +6,13 @@ Run
      rake db:migrate VERION = 0 # to revert
      rake db:migrate:status  # returns status
 
+
+The join tables are named alphabetically (and plural):
+
+ex. Project-Collaborator
+
+we use collaborators_projects
+
+AdminUser - Page
+
+admin_users_pages
