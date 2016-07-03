@@ -1,6 +1,7 @@
 class Subject < ActiveRecord::Base
 
-	# definig scopes for shorter queries
+	has_many :pages
+	# defining scopes for shorter queries
 	scope :visible, lambda { where(visible: true) }
 	scope :invisible, lambda { where(visible: false) }
 	scope :sorted, lambda { order("subjects.position ASC") }
